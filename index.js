@@ -2,14 +2,17 @@ var dateOfBirth = document.querySelector("#doBirth");
 var luckyNum = document.querySelector("#luckyNum");
 var checkBtn = document.querySelector("#checkBtn");
 var response = document.querySelector("#response");
-
+response.style.display = "none";
+checkBtn.addEventListener("click" , showResponse)
 checkBtn.addEventListener("click", checkBirthDateIsLucky)
 
 function compareValues(sum, luckyNumber){
     if(sum%luckyNumber === 0){
+        response.style.color = "red";
         response.innerText = "Hurray! Your Birthday is Lucky! 🚀 ";
     }
     else{
+        response.style.color = "blue";
         response.innerText = "Uh!😢 Your Birthday is not a Lucky Number";
     }
     
@@ -28,4 +31,7 @@ function calculateSum(dob) {
         sum = sum + Number(dob.charAt(index));
     }
     return sum;
+}
+function showResponse(){
+    response.style.display = "block";
 }
