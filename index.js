@@ -7,6 +7,7 @@ checkBtn.addEventListener("click" , showResponse)
 checkBtn.addEventListener("click", checkBirthDateIsLucky)
 
 function compareValues(sum, luckyNumber){
+    if(luckyNumber>0){
     if(sum%luckyNumber === 0){
         response.style.color = "red";
         response.innerText = "Hurray! Your Birthday is Lucky! 🚀 ";
@@ -15,6 +16,10 @@ function compareValues(sum, luckyNumber){
         response.style.color = "blue";
         response.innerText = "Uh!😢 Your Birthday is not a Lucky Number";
     }
+}
+else{
+    response.innerText = "⚠️⚠️⚠️Negative number entry is not allowed!⚠️⚠️⚠️"
+}
     
 }
 function checkBirthDateIsLucky(){
