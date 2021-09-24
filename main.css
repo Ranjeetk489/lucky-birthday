@@ -58,3 +58,36 @@ h3{
     width: 65%;
     background-color: burlywood;
 }
+footer {
+    text-align: center;
+    background-color: #118882;
+    color: #fff;
+    margin-top: 2.5cm;
+  }
+  
+  footer p {
+    font-size: large;
+    text-align: center;
+  }
+  
+  .footer-list {
+    margin: 1rem;
+  }
+  
+  a,
+  img,
+  li {
+    display: inline;
+    color: #fff;
+  }
+  
+  img {
+    width: 40px;
+    padding: 1rem 0.2rem;
+  }
+
+#logo{
+    position: relative;
+    width: 200px;
+    margin: auto;
+}
