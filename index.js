@@ -18,7 +18,7 @@ function compareValues(sum, luckyNumber){
     }
 }
 else{
-    response.innerText = "⚠️⚠️⚠️Negative number entry is not allowed!⚠️⚠️⚠️"
+    response.innerText = "⚠️ Empty input and Negative numbers entry is not allowed!"
 }
     
 }
